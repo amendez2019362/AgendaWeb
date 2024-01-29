@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedor {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/*INPUTS Y ANIMACION*/
+
+.text1 {
+    display: grid;
+    width: 200px;
+    padding: 1.5rem 0;
+    grid-template-areas: "input1";
+
+    >* {
+        grid-area: input;
+    }
+}
+
+.text2 {
+    display: grid;
+    width: 200px;
+    padding: 1.5rem 0;
+    grid-template-areas: "input2";
+
+    >* {
+        grid-area: input;
+    }
+}
+
+.span1 {
+    transform-origin: left;
+    transition: transform .3s, color .3s;
+}
+
+.span2 {
+    transform-origin: left;
+    transition: transform .3s, color .3s;
+}
+
+.input1 {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid slategrey;
+    font: inherit;
+
+    &:focus+.span1,
+    &:not(:placeholder-shown)+.span1 {
+        color: blueviolet;
+        transform: translate(0, -100%) scale(.8);
+    }
+}
+
+.input2 {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid slategrey;
+    font: inherit;
+
+    &:focus+.span2,
+    &:not(:placeholder-shown)+.span2 {
+        color: blueviolet;
+        transform: translate(0, -100%) scale(.8);
+    }
+}
