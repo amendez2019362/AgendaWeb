@@ -8,6 +8,8 @@ body {
     font-family: 'Nunito', sans-serif;
     margin-top: 80px;
     padding: 30px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 main {
@@ -24,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     box-shadow: 0 0 25px 0 rgb(22, 20, 20);
+    
 }
 
 header * {
@@ -35,43 +38,121 @@ header li {
 }
 
 header li a {
-    color: rgb(235, 76, 76);
+    color: rgba(214, 29, 29, 0.73);
     text-decoration: none;
 }
 
-.card {
-    width: 300px;
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #ef62625b;
+.contenedor-contact{
+    margin-top: 400px;
+    margin-bottom: 30px;
 }
 
-.contact-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-list li a {
+    color: #007bff;
 }
 
 .contact-item {
-    margin-bottom: 20px;
-    background-color: #d8c9b969;
-    border-radius: 20px;
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 
 .contact-details {
     text-align: left;
+    padding: 15px;
+}
+
+.contact-image {
+    width: 75%;
+    height: 180px;
+    object-fit: cover;
 }
 
 .contact-name {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .contact-phone,
 .contact-email {
     font-size: 14px;
     color: #000000;
+    margin-bottom: 5px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
+
+.contact-edad {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-phone i,
+.contact-email i {
+    margin-right: 5px;
+}
+
+.button-agregar {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #197f94f1;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+   
+   .button-agregar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   .button-agregar span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   .button-agregar:hover span {
+    padding-right: 15px;
+   }
+   
+   .button-agregar:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
