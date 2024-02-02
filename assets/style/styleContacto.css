@@ -26,7 +26,7 @@ header {
     display: flex;
     align-items: center;
     box-shadow: 0 0 25px 0 rgb(22, 20, 20);
-    
+
 }
 
 header * {
@@ -42,9 +42,10 @@ header li a {
     text-decoration: none;
 }
 
-.contenedor-contact{
+.contenedor-contact {
     margin-top: 400px;
     margin-bottom: 30px;
+
 }
 
 .card {
@@ -130,29 +131,30 @@ header li a {
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-   }
-   
-   .button-agregar span {
+}
+
+.button-agregar span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-   }
-   
-   .button-agregar span:after {
+}
+
+.button-agregar span:after {
     content: '»';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -15px;
     transition: 0.5s;
-   }
-   
-   .button-agregar:hover span {
+}
+
+.button-agregar:hover span {
     padding-right: 15px;
-   }
-   
-   .button-agregar:hover span:after {
+}
+
+.button-agregar:hover span:after {
     opacity: 1;
     right: 0;
-   }
+}
+

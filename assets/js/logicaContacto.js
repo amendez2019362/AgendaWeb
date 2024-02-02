@@ -108,12 +108,3 @@ document.addEventListener("DOMContentLoaded", function () {
     card.appendChild(listaContactos);
 });
 
-/*Agregar contacto*/
-
-const newContactButton = document.getElementById("new-contact");
-
-newContactButton.addEventListener("click", () => {
-
-  const url = '../pages/NuevoContacto.html';
-  window.location.href = url;
-});

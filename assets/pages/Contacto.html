@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style/styleContacto.css">
+    <link rel="stylesheet" href="/assets/style/styleNuevoContacto.css">
     <title>Contactos</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul  class="contat-list">
+            <ul class="contat-list">
                 <li><a href="/assets/pages/Contacto.html">Contactos</a></li>
                 <li><a href="#">Favoritos</a></li>
                 <li><a href="#">ToDo List</a></li>
@@ -21,11 +22,42 @@
     </header>
     <Section class="contenedor-contact">
         <div class="card" id="contactCard">
-            <button class="button-agregar" id="new-contact">
+            <button class="button-agregar" id="show-form">
                 <span>Agregar</span>
             </button>
         </div>
     </Section>
+    <div class="overlay">
+        <div class="form">
+            <div class="title">Agregar</div>
+            <div class="subtitle">Agrega nuevos amigos a tu lista!</div>
+
+            <div class="input-container ic1">
+                <input placeholder="" type="text" class="input" id="firstname">
+                <div class="cut"></div>
+                <label class="iLabel" for="firstname">Nombre</label>
+            </div>
+
+            <div class="input-container ic2">
+                <input placeholder="" type="text" class="input" id="lastname">
+                <div class="cut"></div>
+                <label class="iLabel" for="lastname">Apellido</label>
+            </div>
+            <div class="input-container ic2">
+                <input placeholder="" type="text" class="input" id="email">
+                <div class="cut cut-short"></div>
+                <label class="iLabel" for="email">Correo</label>
+            </div>
+            <div class="input-container ic2">
+                <input placeholder="" type="number" class="input" id="edad">
+                <div class="cut cut-short"></div>
+                <label class="iLabel" for="email">Edad</label>
+            </div>
+            <button class="submit" type="text" onclick="location.href='Contacto.html'">Agregar</button>
+        </div>
+    </div>
     <script src="/assets/js/logicaContacto.js"></script>
+    <script src="/assets/js/logicaNuevoContacto.js"></script>
 </body>
+
 </html>
