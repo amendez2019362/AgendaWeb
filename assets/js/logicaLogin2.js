@@ -19,7 +19,7 @@ function ingresar() {
     var rol = sessionStorage.getItem('rolUsuarioActivo');
     switch (rol) {
         case '1':
-            window.location.href = './assets/pages/hola.html';
+            window.location.href = './assets/pages/Contacto.html';
             break;
         default:
             break;

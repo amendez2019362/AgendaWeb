@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-image: url('/assets/resources/img/FondoContacto.jpg');
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+main {
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 rgb(22, 20, 20);
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: rgb(235, 76, 76);
+    text-decoration: none;
+}
+
+.card {
+    width: 300px;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ef62625b;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+    background-color: #d8c9b969;
+    border-radius: 20px;
+}
+
+
+.contact-details {
+    text-align: left;
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-phone,
+.contact-email {
+    font-size: 14px;
+    color: #000000;
+}
