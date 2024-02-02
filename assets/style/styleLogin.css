@@ -6,7 +6,7 @@
 body {
     padding: 2rem;
     font-family: 'Nunito', sans-serif;
-    background-image: url(./resources/Fondo.jpg);
+    background-image: url(/assets/resources/img/Fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -141,3 +141,32 @@ body {
   .btn:active {
     opacity: 0.5;
   }
+
+  /*RESPONSIVE*/
+
+  @media screen and(max-width: 750px){
+    html{
+        font-size: 12px;
+    }
+  }
+    
+  @media screen and(max-width: 580px){
+    html{
+        font-size: 10px;
+    }
+
+    .contenedor{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .input1 .input2 .span1 .span2{
+        width: 100%;
+        padding: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+  }
+  
+    
