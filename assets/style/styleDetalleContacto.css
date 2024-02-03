@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contactos {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacto {
+    background-color: rgba(248, 165, 165, 0.315);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.imagen {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.imagen img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.informacion {}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.cargo {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.button-detalles {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #197f94f1;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button-detalles span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-detalles span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.button-detalles:hover span {
+    padding-right: 15px;
+}
+
+.button-detalles:hover span:after {
+    opacity: 1;
+    right: 0;
+}

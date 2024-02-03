@@ -119,6 +119,7 @@ header li a {
 }
 
 .button-agregar {
+    margin-top: 100px;
     display: inline-block;
     border-radius: 15px;
     background-color: #197f94f1;
