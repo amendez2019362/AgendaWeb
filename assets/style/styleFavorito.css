@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-image: url('/assets/resources/img/FondoContacto.jpg');
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main {
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 rgb(22, 20, 20);
+
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: rgba(214, 29, 29, 0.73);
+    text-decoration: none;
+}
+
+.contenedor-contact-favorito {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.cardFavorito {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-list-favorito li a {
+    color: #007bff;
+}
+
+.contact-item {
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.contact-details {
+    text-align: left;
+    padding: 15px;
+}
+
+.contact-image {
+    width: 75%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-phone,
+.contact-email {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact-edad {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-phone i,
+.contact-email i {
+    margin-right: 5px;
+}
