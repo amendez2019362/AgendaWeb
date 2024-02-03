@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-image: url('/assets/resources/img/FondoContacto.jpg');
+    background-image: url('../resources/img/FondoContacto.jpg');
     background-size: cover;
     font-family: 'Nunito', sans-serif;
     margin-top: 80px;

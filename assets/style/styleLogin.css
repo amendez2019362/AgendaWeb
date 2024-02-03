@@ -6,7 +6,7 @@
 body {
     padding: 2rem;
     font-family: 'Nunito', sans-serif;
-    background-image: url(/assets/resources/img/Fondo.jpg);
+    background-image: url(../resources/img/Fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -142,3 +142,13 @@ body {
     opacity: 0.5;
 }
 
+/* Media Query para móviles */
+@media only screen and (max-width: px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .imagen {
+        display: none;
+    }
+}
