@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="/assets/style/styleNuevoContacto.css">
     <link rel="stylesheet" href="/assets/style/styleDetalleContacto.css">
     <link rel="stylesheet" href="/assets/style/styleFavorito.css">
-    <title>Favorito</title>
+    <link rel="stylesheet" href="/assets/style/stylePerfil.css">
+    <title>Perfil</title>
 </head>
 
 <body>
     <header>
         <nav>
             <ul class="contat-list">
-                <li><a href="#">Perfil</a></li>
+                <li><a href="/assets/pages/Perfil.html">Perfil</a></li>
                 <li><a href="/assets/pages/Contacto.html">Contactos</a></li>
                 <li><a href="/assets/pages/Favorito.html">Favoritos</a></li>
                 <li><a href="#">ToDo List</a></li>
@@ -23,13 +24,26 @@
             </ul>
         </nav>
     </header>
-    <Section class="contenedor-contact-favorito">
-        <div class="cardFavorito" id="contactCard-favorito">
-        </div>
+    <Section>
+        <figure class="perfil">
+            <div class="perfil-imagen"><img src="/assets/resources/img/yo.jpeg" alt="yo" /></div>
+            <figcaption>
+              <h3>Angel Adolfo Méndez Orozco</h3>
+              <h4>18 años</h4>
+              <p>+502 4804-0227</p>
+              <p>13 calle "B" 4-61 zona 3, Guatemala</p>
+              <div class="icons">
+                <a href="https://twitter.com/"><i class="ion-social-twitter"></i></a>
+                <a href="https://github.com/amendez2019362/AgendaWeb.git"> <i class="ion-social-github"></i></a>
+                <a href="https://www.instagram.com/angeel__1l?utm_source=qr&igsh=cnpzOHNkczRzeGVj"> <i class="ion-social-instagram"></i></a>
+              </div>
+            </figcaption>
+          </figure>
     </Section>
     <script src="/assets/js/logicaContacto.js"></script>
     <script src="/assets/js/logicaNuevoContacto.js"></script>
     <script src="/assets/js/logicaDetalleContacto.js"></script>
     <script src="/assets/js/logicaFavorito.js"></script>
+    <script src="/assets/js/logicaPerfil.js"></script>
 </body>
 </html>
